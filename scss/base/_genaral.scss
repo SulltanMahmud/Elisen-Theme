@@ -10,14 +10,92 @@
 // font weight 500
 
 .custom-container {
-  max-width: 1380px;
-  margin-right: 69px;
-  margin-left: 69px;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+  }
+  @media (max-width: 767px) {
+    max-width: 767px;
+  }
 }
 
 .button {
   background-color: #007b8e;
+
   border-radius: 10px;
-  padding: 7px 11px;
-  color: white;
+  padding: 7px 13px;
+
+  letter-spacing: 0.5px;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    color: white;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .circle {
+    height: 6px;
+    width: 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 8px;
+  }
+  &:hover {
+    .circle {
+      background-color: white;
+    }
+  }
+}
+
+.transparent-button {
+  background-color: transparent;
+
+  border-radius: 10px;
+  padding: 7px 13px;
+
+  letter-spacing: 0.5px;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+    color: white;
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .circle {
+    height: 6px;
+    width: 6px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 8px;
+  }
+  &:hover {
+    .circle {
+      background-color: white;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
