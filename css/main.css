@@ -60,11 +60,11 @@
   background-color: transparent;
   border-radius: 10px;
   padding: 7px 13px;
+  padding-left: 5px;
   letter-spacing: 0.5px;
   line-height: 1;
   position: relative;
   display: inline-block;
-  margin-bottom: 10px;
 }
 .transparent-button a {
   text-decoration: none;
@@ -80,7 +80,7 @@
   border-radius: 50%;
   position: absolute;
   top: 45%;
-  left: 8px;
+  left: 1px;
 }
 .transparent-button:hover .circle {
   background-color: white;
@@ -154,7 +154,7 @@ a {
   background: rgba(0, 0, 0, 0.5);
 }
 .hero-section__content {
-  position: absolute;
+  position: relative;
   z-index: 1000;
   color: white;
 }
@@ -213,4 +213,55 @@ a {
 }
 .hero-section__content .hero-section__info .hero-section__bokmark i {
   padding: 10px;
+}
+.hero-section .last-part-wrapper {
+  position: absolute;
+  bottom: 30px;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart__img {
+  position: relative;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart__img img {
+  height: 90px;
+  width: 90px;
+  border-radius: 5px;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart__img .hero-section__bokmark {
+  position: absolute;
+  top: 7px;
+  left: 19px;
+  background-color: #fff;
+  color: black;
+  height: 30px;
+  width: 30px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart__img .hero-section__bokmark:hover {
+  border: 1px solid white;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart__img .hero-section__bokmark i {
+  padding: 10px;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart-content__heading a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+}
+.hero-section .last-part-wrapper .hero-section-lastpart-content__date {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  opacity: 0.7;
 }
