@@ -1,0 +1,52 @@
+.navbar {
+  background-color: rgb(30, 30, 30);
+  padding: 30px 60px;
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: 22px;
+    }
+  }
+  .navbar-left {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 19.5px;
+          padding: 5px 10px;
+
+          span {
+            margin-left: 5px;
+          }
+        }
+
+        &.nav-btn {
+          background-color: rgb(61, 130, 198);
+          padding: 3px 12px;
+
+          border-radius: 15px;
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  .navbar-right {
+    .navbar-nav {
+      .nav-link {
+        color: #fff;
+
+        i {
+          font-size: 18px;
+          line-height: 18px;
+          &:hover {
+            color: rgb(235, 112, 153);
+          }
+        }
+      }
+    }
+  }
+}
