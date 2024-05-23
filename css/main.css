@@ -254,6 +254,16 @@ a {
 .hero-section .last-part-wrapper .hero-section-lastpart__img .hero-section__bokmark i {
   padding: 10px;
 }
+.hero-section .last-part-wrapper .hero-section-lastpart__img:hover img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
 .hero-section .last-part-wrapper .hero-section-lastpart-content__heading a {
   font-size: 16px;
   font-weight: 600;

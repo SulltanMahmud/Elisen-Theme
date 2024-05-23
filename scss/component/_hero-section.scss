@@ -125,6 +125,13 @@
             padding: 10px;
           }
         }
+        &:hover{
+          img{
+            filter: grayscale(100%);
+            transform: scale(0.9);
+            transition: transform 0.5s ease-in-out;
+          }
+        }
       }
       &-content__heading {
         a {
