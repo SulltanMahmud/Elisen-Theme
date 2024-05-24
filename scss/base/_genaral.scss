@@ -36,12 +36,24 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
+  @include md {
+    padding: 7px 11px;
+  }
+  @include sm {
+    padding: 5px 9px;
+    margin-bottom: 0px;
+    line-height: 0.9;
+  }
   a {
     text-decoration: none;
     color: white;
     margin-left: 4px;
     font-size: 12px;
     font-weight: 600;
+
+    @include sm {
+      font-size: 10px;
+    }
   }
 
   .circle {
@@ -52,6 +64,10 @@
     position: absolute;
     top: 45%;
     left: 8px;
+
+    @include sm {
+      left: 4px;
+    }
   }
   &:hover {
     .circle {
@@ -66,11 +82,20 @@
   border-radius: 10px;
   padding: 7px 13px;
   padding-left: 5px;
-
+  color: #fff;
   letter-spacing: 0.5px;
   line-height: 1;
   position: relative;
   display: inline-block;
+
+  &--yellow {
+    a {
+      color: yellow;
+      margin-left: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -99,4 +124,89 @@
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.black-bg {
+  background-color: #1e1e1e;
+}
+
+.p-30 {
+  padding: 30px;
+
+  @include sm {
+    padding: 20px;
+  }
+}
+
+.heading {
+  font-size: 24px;
+  line-height: 31.2px;
+  font-weight: 600;
+  color: white;
+
+  @include sm {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+}
+
+// 2nd overlay
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay--2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #005652;
+  border-radius: 10px;
+}
+
+.background-3 {
+  background-image: url("/assets/effe-2.webp") !important;
+  object-fit: cover;
+}
+
+// Transparent Button class
+.ts-btn {
+  background: transparent;
+  position: relative;
+  padding: 7px 14px;
+
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 12px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 36%;
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  &:hover {
+    &::before {
+      background-color: white;
+    }
+  }
 }
