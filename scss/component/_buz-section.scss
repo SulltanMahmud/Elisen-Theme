@@ -1,0 +1,89 @@
+.buzzSection {
+  &--1 {
+    background-image: url(/assets/hill-img.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--2 {
+    background-image: url(/assets/vinowebp.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--3 {
+    background-image: url(/assets/nasimwebp.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--4 {
+    background-image: url(/assets/brecht.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--5 {
+    background-image: url(/assets/ameer-basheer-gV6taBJuBTk-unsplash-300x300.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  &--6 {
+    background-image: url(/assets/shubham-dhage-cIwzPYs-_Mk-unsplash-300x300.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--7 {
+    background-image: url(/assets/julio-angel-berroa-nVBqcnAt_2Q-unsplash-300x300.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+  &--8 {
+    background-image: url(/assets/abdullah-raafat-rWaQGsOquuc-unsplash-300x300.webp);
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+
+  @include sm {
+    height: 175px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    position: relative;
+    bottom: 0;
+    h5 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 26px;
+      color: #fff;
+    }
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-right: 20px;
+      color: rgb(226, 203, 203);
+    }
+  }
+}

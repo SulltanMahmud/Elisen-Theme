@@ -138,8 +138,13 @@ a {
   }
 }
 
-.p-40{
+.p-40 {
   padding: 40px;
+}
+
+// margin
+.mb--30 {
+  margin-bottom: 30px;
 }
 
 .heading {
@@ -161,7 +166,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .overlay--2 {
   position: absolute;
@@ -212,5 +217,30 @@ a {
     &::before {
       background-color: white;
     }
+  }
+}
+
+.bokmark {
+  border: 1px solid hsla(0, 0%, 100%, 0.4);
+  height: 35px;
+  width: 35px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  position: relative;
+
+  @include sm {
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+  }
+  &:hover {
+    border: 1px solid white;
+  }
+  i {
+    padding: 10px;
   }
 }
