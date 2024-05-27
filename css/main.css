@@ -133,6 +133,10 @@ a {
   }
 }
 
+.p-40 {
+  padding: 40px;
+}
+
 .heading {
   font-size: 24px;
   line-height: 31.2px;
@@ -634,4 +638,17 @@ a {
   font-weight: 500;
   line-height: 12px;
   opacity: 0.7;
+}
+
+.editorSection {
+  position: relative;
+}
+.editorSection__left {
+  background-image: url("/assets/hill-img.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
 }
