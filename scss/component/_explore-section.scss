@@ -1,0 +1,84 @@
+.exploreSection {
+  color: white;
+
+  &__img {
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+      border-radius: 15px;
+      width: 100%;
+      object-fit: cover;
+      transform: scale(1.2);
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1);
+        filter: grayscale(1);
+      }
+    }
+  }
+  &__content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    &__content__left {
+      h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.8px;
+        @include sm{
+             margin-bottom: 0px;
+        }
+      }
+      p {
+        margin-bottom: 0px;
+        color: rgb(178, 178, 178);
+        font-size: 13px;
+        font-weight: 500;
+        opacity: 0.7;
+        margin-top: 7px;
+      }
+    }
+    .title-section__lern {
+      display: flex;
+      align-items: center;
+      padding-left: 3px;
+      justify-content: space-between;
+      a {
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(233, 96, 142);
+
+        line-height: 12px;
+
+        @include sm {
+          font-size: 10px;
+        }
+      }
+      &__arrow {
+        border: 1px solid rgb(233, 96, 142);
+        height: 30px;
+        width: 30px;
+        font-size: 13px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin-left: 10px;
+        i {
+          color: rgb(233, 96, 142);
+        }
+      }
+
+      &:hover {
+        .title-section__lern__arrow {
+          background-color: rgb(233, 96, 142);
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

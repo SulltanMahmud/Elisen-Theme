@@ -157,6 +157,9 @@ a {
 // margin
 .mb--30 {
   margin-bottom: 30px;
+  @include md{
+    margin-bottom: 5px;
+  }
 }
 
 .heading {
@@ -255,4 +258,7 @@ a {
   i {
     padding: 10px;
   }
+}
+.splide__pagination__page{
+   &.
 }

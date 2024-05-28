@@ -41,6 +41,11 @@
         margin-bottom: 0px;
         margin-left: 20px;
 
+        @include md{
+          font-size: 14px;
+          line-height: 16px;
+        }
+
         @include sm {
           font-size: 12px;
           font-weight: 400;
@@ -54,6 +59,10 @@
       width: 50%;
       border-top: 1px solid rgba(153, 153, 153, 0.35);
       border-bottom: 1px solid rgba(153, 153, 153, 0.35);
+
+      @include md{
+        width: 20%;
+      }
       @include sm{
         width: 80px;
       }
