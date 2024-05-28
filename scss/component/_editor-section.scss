@@ -13,6 +13,9 @@
       border-radius: 15px;
       display: flex;
       align-items: end;
+      @include sm{
+        height: 130px;
+      }
       .editorSection__left__content {
         position: absolute;
         .editorSection__info {
