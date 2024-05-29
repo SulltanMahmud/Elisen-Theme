@@ -59,7 +59,8 @@
           box-shadow: none;
           font-size: 12px;
           padding: 10px 20px;
-          @include sm{
+          border: none;
+          @include sm {
             padding: 7px 15px;
           }
         }
@@ -72,6 +73,7 @@
       span {
         font-size: 14px;
         font-weight: 400;
+        margin-left: 5px;
       }
     }
   }

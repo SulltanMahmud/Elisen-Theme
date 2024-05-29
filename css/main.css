@@ -1473,6 +1473,7 @@ a {
           box-shadow: none;
   font-size: 12px;
   padding: 10px 20px;
+  border: none;
 }
 @media only screen and (max-width: 576px) {
   .signupSection__content .signupSection__form .input-group span {
@@ -1490,4 +1491,5 @@ a {
 .signupSection__content .check span {
   font-size: 14px;
   font-weight: 400;
+  margin-left: 5px;
 }
