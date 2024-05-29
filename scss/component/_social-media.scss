@@ -1,1 +1,54 @@
-.
+.social-wrap {
+  padding: 10px 0;
+  .socialSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &__item {
+        padding: 10px 15px;
+      i {
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 5px;
+      }
+      a{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        &:hover{
+            opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+// for random img
+.random-img{
+    display: grid;
+    grid-template-columns:  repeat(8,1fr);
+    @include md{
+        grid-template-columns: repeat(4,1fr);
+         
+    }
+    @include sm{
+        grid-template-columns: repeat(3,1fr);
+    }
+    img{
+        height: 178px;
+        width: 178px;
+        width: 100%;
+        object-fit: cover;
+        transition: filter 0.3s ease;
+        &:hover{
+            filter: brightness(90%);  
+        }
+
+        @include sm{
+            height: 136px;
+            width: 136px;
+            width: 100%;
+        }
+    }
+}
