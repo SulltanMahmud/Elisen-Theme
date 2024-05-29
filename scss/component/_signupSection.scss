@@ -1,0 +1,78 @@
+.signupSection {
+  background-image: url("/assets/signUpwebp.webp");
+  height: 315px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position-y: center;
+  position: relative;
+  color: white;
+  padding: 50px;
+  @include sm {
+    padding: 15px;
+    height: 234px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    @include sm {
+      padding: 15px;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 36.4px;
+      opacity: 1;
+      font-weight: 600;
+      text-align: center;
+      @include sm {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      opacity: 0.7;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .signupSection__form {
+      max-width: 620px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .input-group {
+        input {
+          background-color: rgba(255, 255, 255, 0.2);
+          border: none;
+          padding: 15px 15px;
+          box-shadow: none;
+          &::placeholder {
+            color: white;
+          }
+        }
+        span {
+          background-color: rgb(233, 96, 142);
+          color: White;
+          box-shadow: none;
+          font-size: 12px;
+          padding: 10px 20px;
+          @include sm{
+            padding: 7px 15px;
+          }
+        }
+      }
+    }
+
+    .check {
+      display: flex;
+      justify-content: center;
+      span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

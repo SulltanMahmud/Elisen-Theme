@@ -1,5 +1,6 @@
 .exploreSection {
   color: white;
+  padding-bottom: 50px;
 
   &__img {
     border-radius: 15px;
@@ -27,8 +28,8 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 20.8px;
-        @include sm{
-             margin-bottom: 0px;
+        @include sm {
+          margin-bottom: 0px;
         }
       }
       p {
