@@ -66,6 +66,19 @@
                 <span class=""><i class="fa-solid fa-angle-down"></i></span
               ></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link dot" aria-current="page" href="#">
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -97,6 +110,46 @@
         </div>
       </div>
     </nav>
+    <!-- Offcanvas content -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">
+          Offcanvas right
+        </h5>
+        <button
+          type="button"
+          class=""
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <line
+              x1="4"
+              y1="4"
+              x2="20"
+              y2="20"
+              stroke="black"
+              stroke-width="2"
+            />
+            <line
+              x1="4"
+              y1="20"
+              x2="20"
+              y2="4"
+              stroke="black"
+              stroke-width="2"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">...</div>
+    </div>
+
     <!-- hero section -->
     <section class="hero-section">
       <div class="overlay"></div>
@@ -288,7 +341,7 @@
               <div class="effecttiveSection p-30">
                 <div class="overlay--2"></div>
                 <div class="effecttiveSection__content">
-                  <div class="button">
+                  <div class="button button--orange">
                     <a href="">Gadgets</a>
                     <div class="circle"></div>
                   </div>
@@ -315,7 +368,7 @@
               <div class="effecttiveSection background-3 border-redious p-30">
                 <div class="overlay"></div>
                 <div class="effecttiveSection__content">
-                  <div class="button">
+                  <div class="button button--yellow">
                     <a href="">Gadgets</a>
                     <div class="circle"></div>
                   </div>
@@ -426,8 +479,8 @@
                 <div class="overlay"></div>
                 <div class="editorSection__left p-40">
                   <div class="editorSection__left__content">
-                    <div class="button">
-                      <a href="">Abstract</a>
+                    <div class="button button--yellow">
+                      <a href="">Photo</a>
                       <div class="circle"></div>
                     </div>
                     <div class="editorSection__left__content__heading">
@@ -547,7 +600,7 @@
             <div class="buzzSection buzzSection--1 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
+                <div class="button button--yellow">
                   <a href="">Abstract</a>
                   <div class="circle"></div>
                 </div>
@@ -566,8 +619,8 @@
             <div class="buzzSection buzzSection--2 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
-                  <a href="">Abstract</a>
+                <div class="button button--green">
+                  <a href="">Fashion</a>
                   <div class="circle"></div>
                 </div>
                 <div class="bokmark">
@@ -585,7 +638,7 @@
             <div class="buzzSection buzzSection--3 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
+                <div class="button button--sky">
                   <a href="">Abstract</a>
                   <div class="circle"></div>
                 </div>
@@ -605,7 +658,7 @@
             <div class="buzzSection buzzSection--4 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
+                <div class="button button--yellow">
                   <a href="">Abstract</a>
                   <div class="circle"></div>
                 </div>
@@ -625,8 +678,8 @@
             <div class="buzzSection buzzSection--5 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
-                  <a href="">Abstract</a>
+                <div class="button button--purple">
+                  <a href="">Development</a>
                   <div class="circle"></div>
                 </div>
                 <div class="bokmark">
@@ -645,7 +698,7 @@
             <div class="buzzSection buzzSection--6 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
+                <div class="button button--darkorg">
                   <a href="">Abstract</a>
                   <div class="circle"></div>
                 </div>
@@ -665,8 +718,8 @@
             <div class="buzzSection buzzSection--7 p-30">
               <div class="overlay"></div>
               <div class="buzzSection__button">
-                <div class="button">
-                  <a href="">Abstract</a>
+                <div class="button button--orange">
+                  <a href="">Gadgets</a>
                   <div class="circle"></div>
                 </div>
                 <div class="bokmark">
@@ -733,8 +786,8 @@
               <img src="./assets/hill-img.webp" alt="" />
             </div>
             <div class="featuredSection__content p-50">
-              <div class="button">
-                <a href="">Abstract</a>
+              <div class="button button--yellow">
+                <a href="">photo</a>
                 <div class="circle"></div>
               </div>
               <h3>Exploring World Cuisines at Home</h3>
@@ -761,7 +814,7 @@
               <img src="./assets/nasimwebp.webp" alt="" />
             </div>
             <div class="featuredSection__content p-50">
-              <div class="button">
+              <div class="button button--sky">
                 <a href="">Abstract</a>
                 <div class="circle"></div>
               </div>
@@ -789,7 +842,7 @@
               <img src="./assets/girlwebp.webp" alt="" />
             </div>
             <div class="featuredSection__content p-50">
-              <div class="button">
+              <div class="button button--orange">
                 <a href="">Abstract</a>
                 <div class="circle"></div>
               </div>
@@ -1077,9 +1130,240 @@
     <!-- footer -->
     <div class="black-bg">
       <div class="custom-container">
-        <div class="footer-wraper">
-          <div class="row">
-            
+        <div class="footer-wrap">
+          <div class="footer">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer__fast">
+                  <div class="footer__fast__img">
+                    <img src="./assets/client.webp" alt="" />
+                  </div>
+                  <h6>Anastasia Doe</h6>
+                  <p>
+                    Phasellus viverra nulla ut metus varius laoreet. Quisque
+                    rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                    Curabitur ullamcorper ultricies nisi. Nulla consequat massa
+                    quis enim.
+                  </p>
+                  <div class="d-flex">
+                    <div class="social-logo social-logo--blue">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="social-logo social-logo--purple">
+                      <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="social-logo social-logo--green">
+                      <i class="fa-brands fa-spotify"></i>
+                    </div>
+                    <div class="social-logo social-logo--orange">
+                      <i class="fa-brands fa-amazon"></i>
+                    </div>
+                    <div class="social-logo social-logo--blue">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="trendingSection">
+                  <div class="trendingSection__heading">
+                    <h6>Trending Categories</h6>
+                  </div>
+                  <div class="trendingSection__gallery">
+                    <ul>
+                      <li>
+                        <div class="img">
+                          <div class="overlay"></div>
+                          <div class="img-content">
+                            <p href="">Photo</p>
+                            <div class="round">
+                              <span class="arrow"
+                                ><i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                              <span class="count"> 12 </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img img--2nd">
+                          <div class="overlay"></div>
+                          <div class="img-content">
+                            <p href="">Lifestyle</p>
+                            <div class="round">
+                              <span class="arrow"
+                                ><i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                              <span class="count count--blue"> 7 </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img img--3rd">
+                          <div class="overlay"></div>
+                          <div class="img-content">
+                            <p href="">Gadgets</p>
+                            <div class="round">
+                              <span class="arrow"
+                                ><i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                              <span class="count count--orange"> 5 </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img img--4th">
+                          <div class="overlay"></div>
+                          <div class="img-content">
+                            <p href="">Wellness</p>
+                            <div class="round">
+                              <span class="arrow"
+                                ><i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                              <span class="count count--sky"> 9 </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="img img--5th">
+                          <div class="overlay"></div>
+                          <div class="img-content">
+                            <p href="">Finance</p>
+                            <div class="round">
+                              <span class="arrow"
+                                ><i class="fa-solid fa-arrow-right"></i
+                              ></span>
+                              <span class="count count--sdark"> 11 </span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="latestPostSection">
+                  <div class="latestPostSection__heading">
+                    <h6>Latest Posts</h6>
+                  </div>
+                  <div class="latestPostSection__post">
+                    <ul>
+                      <li>
+                        <div class="hero-section-lastpart">
+                          <div class="hero-section-lastpart__img">
+                            <img src="./assets/hero-img-1.webp" alt="" />
+                            <div class="hero-section__bokmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="hero-section-lastpart-content d-flex flex-column ms-3"
+                          >
+                            <div class="transparent-button--yellow">
+                              <a href="">Abstract</a>
+                              <div class="circle"></div>
+                            </div>
+                            <div class="hero-section-lastpart-content__heading">
+                              <a>parenting Strategies for the Modern Family</a>
+                            </div>
+                            <div class="hero-section-lastpart-content__date">
+                              jun 3,2023
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="hero-section-lastpart">
+                          <div class="hero-section-lastpart__img">
+                            <img src="./assets/hero-img-3.webp" alt="" />
+                            <div class="hero-section__bokmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="hero-section-lastpart-content d-flex flex-column ms-3"
+                          >
+                            <div class="transparent-button--yellow">
+                              <a href="">Abstract</a>
+                              <div class="circle"></div>
+                            </div>
+                            <div class="hero-section-lastpart-content__heading">
+                              <a>parenting Strategies for the Modern Family</a>
+                            </div>
+                            <div class="hero-section-lastpart-content__date">
+                              jun 3,2023
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="hero-section-lastpart">
+                          <div class="hero-section-lastpart__img">
+                            <img src="./assets/hero-img-1.webp" alt="" />
+                            <div class="hero-section__bokmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                          </div>
+                          <div
+                            class="hero-section-lastpart-content d-flex flex-column ms-3"
+                          >
+                            <div class="transparent-button--yellow">
+                              <a href="">Abstract</a>
+                              <div class="circle"></div>
+                            </div>
+                            <div class="hero-section-lastpart-content__heading">
+                              <a>parenting Strategies for the Modern Family</a>
+                            </div>
+                            <div class="hero-section-lastpart-content__date">
+                              jun 3,2023
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="sitemapSection">
+                  <div class="sitemapSection__heading">
+                    <h6>Sitemap</h6>
+                  </div>
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Our Authors</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">My Account</a></li>
+                    <li><a href="">Track Order</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href="">Bookmarks</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="footerLast">
+              <div class="footerLast__left">
+                <p>© 2024 Elisen, Inc. All rights reserved.</p>
+              </div>
+              <div class="footerLast__right">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Shop</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

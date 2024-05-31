@@ -16,31 +16,43 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-
-  // @media (max-width: 1024px) {
-  //   max-width: 1024px;
-  // }
-  // @media (max-width: 767px) {
-  //   max-width: 767px;
-  // }
 }
 
 .button {
   background-color: #007b8e;
-
   border-radius: 10px;
   padding: 7px 13px;
-
   letter-spacing: 0.5px;
   line-height: 1;
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
+  &--orange {
+    background-color: $orange-color;
+  }
+
+  &--green {
+    background-color: $green-color;
+  }
+  &--yellow {
+    background-color: $yellow-color;
+  }
+
+  &--sky{
+    background-color: $sky-color;
+  }
+  &--purple{
+    background-color: $purple-color;
+  }
+  &--darkorg{
+    background-color: $dark-orange-color;
+  }
+
   @include md {
     padding: 7px 11px;
   }
   @include sm {
-    padding: 5px 9px;
+    padding: 7px 11px;
     margin-bottom: 0px;
     line-height: 0.9;
   }
@@ -119,11 +131,6 @@
       background-color: white;
     }
   }
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .black-bg {
@@ -276,6 +283,12 @@ a {
 .linkin {
   color: rgb(10, 102, 194);
 }
-.medium {
-  color: rgb(2, 184, 117);
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }

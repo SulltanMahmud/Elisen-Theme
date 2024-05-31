@@ -107,7 +107,7 @@
           border: 1px solid white;
         }
         i {
-          padding: 10px;
+          padding: 9px;
         }
       }
     }
@@ -156,9 +156,10 @@
             border: 1px solid white;
           }
           i {
-            padding: 10px;
+            padding: 8px;
             @include sm {
-              padding: 5px;
+              padding: 6px;
+              font-size: 10px;
             }
           }
         }

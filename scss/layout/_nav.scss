@@ -1,14 +1,38 @@
 .navbar {
   background-color: rgb(30, 30, 30);
   padding: 30px 60px;
+ @include lg{
+  padding:30px 50px;
+ }
+  @include md {
+    padding: 5px 60px;
+  }
   .navbar-brand {
+    position: relative;
     img {
       width: 150px;
       height: 22px;
     }
   }
   .navbar-left {
+    position: relative;
+   
+    @include md {
+      border-top: 1px solid rgba(152, 152, 152, 0.2);
+      height: 60px;
+      bottom: -30px;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+    }
+
     .navbar-nav {
+      display: flex;
+      align-items: center;
+      @include lg {
+        align-items: center;
+      }
+
       .nav-item {
         .nav-link {
           text-transform: uppercase;
@@ -17,9 +41,23 @@
           font-weight: 500;
           line-height: 19.5px;
           padding: 5px 10px;
+          &.dot {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            padding: 5px;
+          }
 
           span {
             margin-left: 5px;
+          }
+          .btn {
+            color: white;
+            box-shadow: none;
+            border: none;
+            &:hover {
+              color: rgb(238, 133, 168);
+            }
           }
         }
 
@@ -31,17 +69,35 @@
           margin: 0px 10px;
         }
       }
+
+      @include md {
+        flex-direction: row;
+        align-items: center !important;
+      }
     }
   }
 
   .navbar-right {
+    position: relative;
+    @include md {
+      left: 520px;
+      top: -95px;
+    }
     .navbar-nav {
+      @include md {
+        flex-direction: row;
+        align-items: center;
+      }
       .nav-link {
         color: #fff;
 
         i {
           font-size: 18px;
           line-height: 18px;
+          @include md {
+            padding: 5px;
+            font-size: 16px;
+          }
           &:hover {
             color: rgb(235, 112, 153);
           }
