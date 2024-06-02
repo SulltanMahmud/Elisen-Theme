@@ -1,11 +1,15 @@
 .navbar {
   background-color: rgb(30, 30, 30);
   padding: 30px 60px;
+
  @include lg{
   padding:30px 50px;
  }
   @include md {
     padding: 5px 60px;
+  }
+  @include sm{
+     display: none;
   }
   .navbar-brand {
     position: relative;
@@ -16,14 +20,16 @@
   }
   .navbar-left {
     position: relative;
+    
    
     @include md {
       border-top: 1px solid rgba(152, 152, 152, 0.2);
       height: 60px;
       bottom: -30px;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
     }
 
     .navbar-nav {
