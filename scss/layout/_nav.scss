@@ -2,14 +2,14 @@
   background-color: rgb(30, 30, 30);
   padding: 30px 60px;
 
- @include lg{
-  padding:30px 50px;
- }
+  @include lg {
+    padding: 30px 50px;
+  }
   @include md {
     padding: 5px 60px;
   }
-  @include sm{
-     display: none;
+  @include sm {
+    display: none;
   }
   .navbar-brand {
     position: relative;
@@ -20,8 +20,7 @@
   }
   .navbar-left {
     position: relative;
-    
-   
+
     @include md {
       border-top: 1px solid rgba(152, 152, 152, 0.2);
       height: 60px;
@@ -40,6 +39,76 @@
       }
 
       .nav-item {
+        &.home:hover {
+          .home-sub-menu {
+            opacity: 1;
+            display: block;
+          }
+          li {
+            .sub-btn--green,
+            a {
+              animation: fadeIn 0.7s ease-in-out 0.1s forwards;
+            }
+            .sub-btn--pink {
+              animation: fadeIn 0.7s ease-in-out 0.2s forwards;
+            }
+            .sub-btn--soft-green {
+              animation: fadeIn 0.7s ease-in-out 0.3s forwards;
+            }
+            .sub-btn--soft-sky {
+              animation: fadeIn 0.7s ease-in-out 0.4s forwards;
+            }
+            .sub-btn--orange {
+              animation: fadeIn 0.7s ease-in-out 0.5s forwards;
+            }
+            .sub-btn--red {
+              animation: fadeIn 0.7s ease-in-out 0.6s forwards;
+            }
+            .sub-btn--sky {
+              animation: fadeIn 0.7s ease-in-out 0.7s forwards;
+            }
+            .sub-btn--orange {
+              animation: fadeIn 0.7s ease-in-out 0.6s forwards;
+            }
+          }
+        }
+
+        &.post:hover{
+          .post-sub-menu{
+             
+            display: block;
+          }
+        }
+        .home-sub-menu {
+          width: 215px;
+          height: 242px;
+          background-color: white;
+          position: absolute;
+          overflow: hidden;
+          z-index: 1001;
+          border-radius: 5px;
+          background-color: black;
+          opacity: 0;
+          display: none;
+          transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+          transform: translateY(0px);
+
+          ul {
+            padding: 12px 0;
+            li {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 5px 25px;
+
+              a {
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+              }
+            }
+          }
+        }
         .nav-link {
           text-transform: uppercase;
           color: #fff;
@@ -73,6 +142,55 @@
 
           border-radius: 15px;
           margin: 0px 10px;
+        }
+        .post-sub-menu {
+          height: 341px;
+          width: 213px;
+          position: absolute;
+          background-color: #fff;
+          z-index: 99;
+          border-radius: 5px;
+          top: 55px;
+          background-color: black;
+          
+          display: none;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 25px;
+            a {
+              font-size: 14px;
+              font-weight: 500;
+              color: #fff;
+              line-height: 21px;
+            }
+          }
+        }
+
+        .pages-sub-menu{
+          position: absolute;
+          background-color:black;
+          z-index: 99;
+          border-radius: 5px;
+          color: #fff;
+          display: none;
+          ul{
+            padding: 12px 0;
+            li{
+              padding: 5px 25px;
+              font-size: 14px;
+              line-height: 21px;
+              font-weight: 500;
+              width: 213px;
+            }
+          }
+        }
+
+        &.page:hover{
+           .pages-sub-menu{
+            display: block;
+           }
         }
       }
 

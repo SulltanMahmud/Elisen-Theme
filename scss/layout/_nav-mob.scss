@@ -1,0 +1,118 @@
+.nav-mob {
+  @include lg {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+  @include sm {
+    display: block;
+  }
+  color: white;
+  background-color: rgb(18, 18, 18);
+  height: 90px;
+  &__content {
+    background-color: #1e1e1e;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #1e1e1e;
+    width: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    border-radius: 5px;
+
+    button {
+      background-color: #1e1e1e;
+      color: white;
+      border: none;
+    }
+
+    &__img {
+      display: flex;
+
+      .logo {
+        img {
+          width: 55px;
+        }
+      }
+      .moon {
+        height: 25px;
+        width: 25px;
+        border-radius: 100px;
+        background-color: white;
+        position: relative;
+        margin-right: 10px;
+
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: black;
+        }
+      }
+    }
+
+    .navbar-right {
+      .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        .nav-item {
+          .nav-link {
+            padding: 2px 5px;
+
+            i {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// modal
+
+.modal {
+  &-dialog {
+    height: 100%;
+    margin: 0px;
+    border-radius: 0px;
+    .modal-content {
+      height: 100%;
+      background-color: black;
+      color: white;
+      .modal-header{
+        justify-content:end;
+        border: none;
+      }
+      button {
+        &.cross-btn {
+          background-color: #005652;
+          border: none;
+          cursor: pointer;
+          padding: 0;
+          outline: none;
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+
+          svg {
+            transition: transform 0.2s ease;
+          }
+
+          &:hover {
+            svg {
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,6 +21,9 @@
 
       svg {
         transition: transform 0.2s ease;
+        position: relative;
+        left: 25%;
+        top: 8%;
       }
 
       &:hover {

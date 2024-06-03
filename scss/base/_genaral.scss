@@ -38,13 +38,13 @@
     background-color: $yellow-color;
   }
 
-  &--sky{
+  &--sky {
     background-color: $sky-color;
   }
-  &--purple{
+  &--purple {
     background-color: $purple-color;
   }
-  &--darkorg{
+  &--darkorg {
     background-color: $dark-orange-color;
   }
 
@@ -84,6 +84,54 @@
   &:hover {
     .circle {
       background-color: white;
+    }
+  }
+}
+// Sub btn
+.sub-btn {
+  border-radius: 5px;
+  font-size: 11px;
+  height: 20px;
+  font-weight: 500;
+  line-height: 16.5px;
+  margin-left: 5px;
+  padding: 0 6px;
+  color: rgba(255, 255, 255, 0.5);
+
+  &--green {
+    background-color: #005652;
+     
+  }
+
+  &--pink {
+    background-color: $pink-color;
+     
+  }
+
+  &--soft-green {
+    background-color: $soft-green;
+     
+  }
+  &--sky {
+    background-color: $sky-color;
+    
+  }
+  &--orange {
+    background-color: $orange-color;
+   
+  }
+  &--red {
+    background-color: $soft-red;
+     
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
