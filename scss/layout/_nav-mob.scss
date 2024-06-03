@@ -1,4 +1,10 @@
 .nav-mob {
+  @include xxl {
+    display: none;
+  }
+  @include xl {
+    display: none;
+  }
   @include lg {
     display: none;
   }
@@ -87,8 +93,8 @@
       height: 100%;
       background-color: black;
       color: white;
-      .modal-header{
-        justify-content:end;
+      .modal-header {
+        justify-content: end;
         border: none;
       }
       button {
@@ -111,6 +117,37 @@
               transform: rotate(90deg);
             }
           }
+        }
+      }
+    }
+  }
+  .accordion {
+    padding: 15px;
+    &-item {
+      border: none;
+      h2{
+        text-align: center;
+      }
+
+      .accordion-button {
+        background-color: black;
+        box-shadow: none;
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+        a {
+          color: white;
+          font-size: 13px;
+          font-weight: 500;
+          line-height: 18.2px;
+          text-transform: uppercase;
+        }
+
+        &::after {
+          background-image: url("/assets/white-arrow-png-41944.png");
+          background-color: #1e1e1e;
+          padding: 10px;
+          border-radius: 50%;
         }
       }
     }

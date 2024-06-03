@@ -622,6 +622,16 @@ a {
   background-color: rgb(18, 18, 18);
   height: 90px;
 }
+@media only screen and (max-width: 1440px) {
+  .nav-mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav-mob {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .nav-mob {
     display: none;
@@ -740,6 +750,36 @@ a {
 .modal-dialog .modal-content button.cross-btn:hover svg {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+.modal .accordion {
+  padding: 15px;
+}
+.modal .accordion-item {
+  border: none;
+}
+.modal .accordion-item h2 {
+  text-align: center;
+}
+.modal .accordion-item .accordion-button {
+  background-color: black;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+.modal .accordion-item .accordion-button a {
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.2px;
+  text-transform: uppercase;
+}
+.modal .accordion-item .accordion-button::after {
+  background-image: url("/assets/white-arrow-png-41944.png");
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .hero-section {

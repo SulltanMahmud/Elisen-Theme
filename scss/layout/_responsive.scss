@@ -27,7 +27,7 @@
 
 //----------- xx-large devices (larger desktops, 1400px and up) -----------
 @mixin xxl {
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1440px) {
     @content;
   }
 }
