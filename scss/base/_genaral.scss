@@ -27,6 +27,9 @@
   position: relative;
   display: inline-block;
   margin-bottom: 10px;
+  @include sm {
+    padding: 2px 7px;
+  }
   &--orange {
     background-color: $orange-color;
   }
@@ -52,7 +55,7 @@
     padding: 7px 11px;
   }
   @include sm {
-    padding: 7px 11px;
+    padding: 4px 11px;
     margin-bottom: 0px;
     line-height: 0.9;
   }
@@ -100,29 +103,23 @@
 
   &--green {
     background-color: #005652;
-     
   }
 
   &--pink {
     background-color: $pink-color;
-     
   }
 
   &--soft-green {
     background-color: $soft-green;
-     
   }
   &--sky {
     background-color: $sky-color;
-    
   }
   &--orange {
     background-color: $orange-color;
-   
   }
   &--red {
     background-color: $soft-red;
-     
   }
   @keyframes fadeIn {
     0% {
@@ -305,7 +302,7 @@
   @include sm {
     height: 30px;
     width: 30px;
-    font-size: 11px;
+    font-size: 9px;
   }
   &:hover {
     border: 1px solid white;

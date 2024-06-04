@@ -1,9 +1,9 @@
 .navbar {
   background-color: rgb(30, 30, 30);
   padding: 30px 60px;
-
+  position: relative;
   @include lg {
-    padding: 30px 50px;
+    padding: 20px 50px;
   }
   @include md {
     padding: 5px 60px;
@@ -11,6 +11,7 @@
   @include sm {
     display: none;
   }
+
   .navbar-brand {
     position: relative;
     img {
@@ -19,7 +20,22 @@
     }
   }
   .navbar-left {
+    background-color: rgb(30, 30, 30);
     position: relative;
+    z-index: 999;
+    @include lg {
+      border-top: 1px solid rgba(255, 255, 255, 0.24);
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 60px;
+      // bottom: -30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+    }
 
     @include md {
       border-top: 1px solid rgba(152, 152, 152, 0.2);
@@ -73,9 +89,8 @@
           }
         }
 
-        &.post:hover{
-          .post-sub-menu{
-             
+        &.post:hover {
+          .post-sub-menu {
             display: block;
           }
         }
@@ -152,7 +167,7 @@
           border-radius: 5px;
           top: 55px;
           background-color: black;
-          
+
           display: none;
 
           li {
@@ -168,16 +183,16 @@
           }
         }
 
-        .pages-sub-menu{
+        .pages-sub-menu {
           position: absolute;
-          background-color:black;
+          background-color: black;
           z-index: 99;
           border-radius: 5px;
           color: #fff;
           display: none;
-          ul{
+          ul {
             padding: 12px 0;
-            li{
+            li {
               padding: 5px 25px;
               font-size: 14px;
               line-height: 21px;
@@ -187,10 +202,10 @@
           }
         }
 
-        &.page:hover{
-           .pages-sub-menu{
+        &.page:hover {
+          .pages-sub-menu {
             display: block;
-           }
+          }
         }
       }
 
@@ -204,8 +219,7 @@
   .navbar-right {
     position: relative;
     @include md {
-      left: 520px;
-      top: -95px;
+      z-index: 1036;
     }
     .navbar-nav {
       @include md {
