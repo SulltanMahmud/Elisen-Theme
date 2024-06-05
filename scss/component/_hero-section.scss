@@ -13,8 +13,9 @@
   padding-bottom: 90px;
 
   @include md {
-    align-items: start;
+    
     padding-top: 15px;
+    
   }
 
   @include sm {
@@ -34,8 +35,18 @@
 
   &__content {
     position: relative;
+    top: -60%;
     z-index: 1000;
     color: white;
+    @include lg{
+      top: -24%;
+    }
+    @include md{
+      top: -55%;
+    }
+    @include sm{
+      top: 29%;
+    }
 
     &__heading {
       a {
@@ -43,6 +54,10 @@
         font-size: 28px;
         font-weight: 600;
         line-height: 36.4px;
+        @include lg{
+          font-size: 24px;
+          line-height: 31px;
+        }
         @include sm {
           font-size: 20px;
           font-weight: 600;

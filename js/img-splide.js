@@ -1,9 +1,9 @@
 let img = new Splide("#left-img", {
   type: "loop",
   perPage: 1,
-  autoplay: true,
+  // autoplay: true,
   arrows: false,
-  interval: 3000,
+  interval: 2000,
   pagination: false,
   gap: 20,
 
@@ -27,9 +27,9 @@ img.mount();
 let card = new Splide("#card", {
   type: "loop",
   perPage: 2,
-  autoplay: true,
+  // autoplay: true,
   arrows: false,
-  interval: 3000,
+  interval: 2000,
   pagination: false,
   gap: 20,
   perMove: 1,
